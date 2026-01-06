@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="top-bar">
             <div class="top-left">
                 <span class="hashtag">#PRIMEROSOY<span>VENADO</span></span>
@@ -31,193 +31,559 @@
         </div>
 
         <nav class="nav-bar">
-            <div class="logo-container">
-                <img src="assets/img/logo.png" alt="Venados FC" class="logo">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="assets/img/logo.png" alt="Venados FC" class="logo">
+                </div>
+                
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#noticias">NOTICIAS</a></li>
+                    <li><a href="#aficion">AFICIÓN</a></li>
+                    <li><a href="#nosotros">EL CLUB</a></li>
+                    <li><a href="#galeria">GALERÍA</a></li>
+                    <li><a href="#videos">VIDEOS</a></li>
+                    <li><a href="https://venadosfc.com.mx/tienda/" target="_blank">TIENDA</a></li>
+                    <li><a href="https://venadosfc.com.mx/copa-venados/" target="_blank">COPA VENADOS</a></li>
+                    <li><a href="#contacto" class="btn-nav-accent">CONTACTO</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#aficion">AFICIÓN</a></li>
-                <li><a href="#nosotros">EL CLUB</a></li>
-                <li><a href="#galeria">GALERÍA</a></li>
-                <li><a href="#videos">VIDEOS</a></li>
-                <li><a href="https://venadosfc.com.mx/tienda/" target="_blank">TIENDA</a></li>
-                <li><a href="https://venadosfc.com.mx/copa-venados/" target="_blank">COPA VENADOS</a></li>
-                <li><a href="#contacto" class="btn-nav-accent">CONTACTO</a></li>
-            </ul>
         </nav>
+        
+        <!-- Menú móvil overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     </header>
 
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-content" data-aos="fade-up">
-            <h1 class="hero-title">VENADOS FC</h1>
-            <h2 class="hero-subtitle">FILIAL CANCÚN</h2>
-            <p>Forjando talento con pasión y tradición en el Caribe mexicano.</p>
-            <a href="#contacto" class="btn-primary">ÚNETE AL EQUIPO</a>
+        <!-- Partículas animadas -->
+        <div class="particles-container" id="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="hero-content">
+            <!-- Logo animado -->
+            <div class="logo-animated" data-aos="zoom-in" data-aos-delay="200">
+                <div class="logo-ring"></div>
+                <img src="assets/img/logo.png" alt="Venados FC" class="hero-logo">
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-down" data-aos-delay="300">VENADOS FC</h1>
+            <div class="hero-divider" data-aos="zoom-in" data-aos-delay="400"></div>
+            <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="450">FILIAL CANCÚN</h2>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="500">Forjando talento con pasión y tradición en el Caribe mexicano.</p>
+            
+            <!-- Estadísticas animadas -->
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-label">Años</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="636">0</span>
+                    <span class="stat-label">Jugadores</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="57">0</span>
+                    <span class="stat-label">Títulos</span>
+                </div>
+            </div>
+            
+            <a href="#contacto" class="btn-primary hero-btn" data-aos="zoom-in" data-aos-delay="700">
+                <span>¡Únete a la manada!</span>
+                <div class="btn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+          
+                
+
+            </span>
+           
+            
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE NOTICIAS -->
+    <section id="noticias" class="section news-section">
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-title-container">
+                <h2 class="section-title">ÚLTIMAS NOTICIAS</h2>
+                <div class="title-underline">
+                    <div class="underline-bar"></div>
+                    <div class="underline-circle"></div>
+                </div>
+            </div>
+            <p class="section-subtitle">Mantente informado sobre Venados FC Cancún</p>
+        </div>
+        
+        <div class="news-container">
+            <!-- Noticia 1 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="news-image">
+                    <img src="assets/img/noticias/noticia1.jpg" alt="Noticia 1" loading="lazy">
+                    <div class="news-date">
+                        <span class="day">05</span>
+                        <span class="month">ENE</span>
+                    </div>
+                    <div class="news-overlay"></div>
+                </div>
+                <div class="news-content">
+                    <div class="news-category">ANUNCIOS</div>
+                    <h3 class="news-title">Venados FC Filial Cancún viaja a Campeche para disputar la Copa Celta 🏆</h3>
+                    <p class="news-excerpt">Del 7 al 11 de enero estara presente en Campeche.Porque en el fútbol formativo no solo se forman jugadores… se forman mejores personas.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> Esta semana</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 2 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="news-image">
+                    <img src="assets/img/noticias/noticia2.jpg" alt="Noticia 2" loading="lazy">
+                    <div class="news-date">
+                        <span class="day">26</span>
+                        <span class="month">DIC</span>
+                    </div>
+                    <div class="news-overlay"></div>
+                </div>
+                <div class="news-content">
+                    <div class="news-category">ANUNCIOS</div>
+                    <h3 class="news-title">Nos vamos para CAMPECHE</h3>
+                    <p class="news-excerpt">Por tercer año consecutivo! Estaremos presentes dandolo todo, esta vez, con nuestra nueva piel, nueva identidad pero la misma garra de siempre!</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> Hace 2 semanas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticia 3 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="news-image">
+                    <img src="assets/img/noticias/noticia3.jpg" alt="Noticia 3" loading="lazy">
+                    <div class="news-date">
+                        <span class="day">22</span>
+                        <span class="month">Dic</span>
+                    </div>
+                    <div class="news-overlay"></div>
+                </div>
+                <div class="news-content">
+                    <div class="news-category">ANUNCIOS</div>
+                    <h3 class="news-title">Nace un nuevo proyecto: Venados FC Filial Cancún</h3>
+                    <p class="news-excerpt">El día de ayer se presentó de manera oficial la camiseta de Venados FC Filial Cancún que tendrá como sede el complejo deportivo de la sm 221, en la presentación se mencionó a través de su representante Isidro Ramirez.</p>
+                    <div class="news-meta">
+                        <span><i class="far fa-clock"></i> Hace 3 semanas</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="aficion" class="section">
-        <h2 class="section-title" data-aos="fade-up">NUESTRA AFICIÓN</h2>
-        <p class="section-subtitle">La fuerza detrás del equipo</p>
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-title-container">
+                <h2 class="section-title">NUESTRA AFICIÓN</h2>
+                <div class="title-underline">
+                    <div class="underline-bar"></div>
+                    <div class="underline-circle"></div>
+                </div>
+            </div>
+            <p class="section-subtitle">La fuerza detrás del equipo</p>
+        </div>
         
         <div class="swiper swiper-aficion" data-aos="zoom-in">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/aficion/fan1.jpg" alt="Fan 1" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/aficion/fan2.jpg" alt="Fan 2" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/aficion/fan3.jpg" alt="Fan 3" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/aficion/fan4.jpg" alt="Fan 4" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/aficion/fan5.jpg" alt="Fan 5" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/aficion/fan6.jpg" alt="Fan 6" loading="lazy"></div>
+                <div class="swiper-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="assets/img/aficion/fan1.jpg" alt="Fan 1" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>La Manada</h3>
+                        <p>Nuestro apoyo incondicional</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="assets/img/aficion/fan2.jpg" alt="Fan 2" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Por Siempre Venados</h3>
+                        <p>Pasión en cada partido</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="assets/img/aficion/fan3.jpg" alt="Fan 3" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Familia Venados</h3>
+                        <p>Unidos por el fútbol</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="assets/img/aficion/fan4.jpg" alt="Fan 4" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>#PrimeroSoyVenado</h3>
+                        <p>Identidad y orgullo</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="assets/img/aficion/fan5.jpg" alt="Fan 5" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Cancún con Venados</h3>
+                        <p>Raíces en el Caribe</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-overlay"></div>
+                    <img src="assets/img/aficion/fan6.jpg" alt="Fan 6" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Generación Venados</h3>
+                        <p>Futuro prometedor</p>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
         </div>
     </section>
 
     <section id="nosotros" class="section dark">
-        <h2 class="section-title" data-aos="fade-down">Nuestra Filosofía</h2>
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-title-container">
+                <h2 class="section-title">Nuestra Filosofía</h2>
+                <div class="title-underline">
+                    <div class="underline-bar"></div>
+                    <div class="underline-circle"></div>
+                </div>
+            </div>
+            <p class="section-subtitle">Los pilares que nos definen</p>
+        </div>
+        
         <div class="cards-container">
             <div class="card" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-shield-halved"></i>
-                <h3>Disciplina</h3>
-                <p>La base fundamental para forjar profesionales.</p>
+                <div class="card-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Disciplina</h3>
+                    <p>La base fundamental para forjar profesionales. Compromiso y dedicación en cada entrenamiento.</p>
+                </div>
+                <div class="card-number">01</div>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Formación</h3>
-                <p>Desarrollo técnico y humano de cada jugador.</p>
+                <div class="card-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Formación</h3>
+                    <p>Desarrollo técnico y humano de cada jugador. Valores que trascienden la cancha.</p>
+                </div>
+                <div class="card-number">02</div>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-trophy"></i>
-                <h3>Éxito</h3>
-                <p>Mentalidad ganadora dentro y fuera de la cancha.</p>
+                <div class="card-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Éxito</h3>
+                    <p>Mentalidad ganadora dentro y fuera de la cancha. Triunfos que construyen legado.</p>
+                </div>
+                <div class="card-number">03</div>
             </div>
         </div>
     </section>
 
     <section id="galeria" class="section">
-        <h2 class="section-title" data-aos="fade-up">GALERÍA</h2>
-        <p class="section-subtitle">Momentos inolvidables en la cancha</p>
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-title-container">
+                <h2 class="section-title">GALERÍA</h2>
+                <div class="title-underline">
+                    <div class="underline-bar"></div>
+                    <div class="underline-circle"></div>
+                </div>
+            </div>
+            <p class="section-subtitle">Momentos inolvidables en la cancha</p>
+        </div>
         
         <div class="swiper swiper-galeria" data-aos="fade-up">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/gallery/1.jpg" alt="Galería 1" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/2.jpg" alt="Galería 2" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/3.jpg" alt="Galería 3" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/4.jpg" alt="Galería 4" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/5.jpg" alt="Galería 5" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/6.jpg" alt="Galería 6" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/7.jpg" alt="Galería 7" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/8.jpg" alt="Galería 8" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/9.jpg" alt="Galería 9" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/10.jpg" alt="Galería 10" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/11.jpg" alt="Galería 11" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/12.jpg" alt="Galería 12" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/13.jpg" alt="Galería 13" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/14.jpg" alt="Galería 14" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/15.jpg" alt="Galería 15" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/16.jpg" alt="Galería 16" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/17.jpg" alt="Galería 17" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/18.jpg" alt="Galería 18" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/19.jpg" alt="Galería 19" loading="lazy"></div>
-                <div class="swiper-slide"><img src="assets/img/gallery/20.jpg" alt="Galería 20" loading="lazy"></div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/1.jpg" alt="Galería 1" loading="lazy">
+                    <div class="gallery-caption">Victoria en casa</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/2.jpg" alt="Galería 2" loading="lazy">
+                    <div class="gallery-caption">Entrenamiento de élite</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/3.jpg" alt="Galería 3" loading="lazy">
+                    <div class="gallery-caption">Celebración del gol</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/4.jpg" alt="Galería 4" loading="lazy">
+                    <div class="gallery-caption">Formación táctica</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/5.jpg" alt="Galería 5" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/6.jpg" alt="Galería 6" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/7.jpg" alt="Galería 7" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/8.jpg" alt="Galería 8" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/9.jpg" alt="Galería 9" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/10.jpg" alt="Galería 10" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/11.jpg" alt="Galería 11" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/12.jpg" alt="Galería 13" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/14.jpg" alt="Galería 15" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/16.jpg" alt="Galería 16" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/17.jpg" alt="Galería 17" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/18.jpg" alt="Galería 18" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/19.jpg" alt="Galería 19" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-overlay"></div>
+                    <img src="assets/img/gallery/20.jpg" alt="Galería 20" loading="lazy">
+                    <div class="gallery-caption">Torneo internacional</div>
+                </div>
+                
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
         </div>
     </section>
 
     <section id="videos" class="section dark">
-    <h2 class="section-title" data-aos="fade-up">MOMENTOS EN VIDEO</h2>
-    <p class="section-subtitle">Revive la pasión en movimiento</p>
-    
-    <div class="video-grid">
-        <div class="video-container horizontal" data-aos="zoom-in">
-            <iframe src="https://www.youtube.com/embed/h1PQGck2uGs" frameborder="0" allowfullscreen></iframe>
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-title-container">
+                <h2 class="section-title">MOMENTOS EN VIDEO</h2>
+                <div class="title-underline">
+                    <div class="underline-bar"></div>
+                    <div class="underline-circle"></div>
+                </div>
+            </div>
+            <p class="section-subtitle">Revive la pasión en movimiento</p>
         </div>
-
-        <div class="video-container vertical" data-aos="zoom-in" data-aos-delay="100">
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F614487644862009%2F&show_text=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        
+        <div class="video-grid">
+            <div class="video-container horizontal" data-aos="zoom-in">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span>Ver ahora</span>
+                </div>
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1103082351497081%2F&show_text=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="video-container vertical" data-aos="zoom-in" data-aos-delay="100">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span>Ver ahora</span>
+                </div>
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1493055455469216%2F&show_text=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="video-container vertical" data-aos="zoom-in" data-aos-delay="200">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span>Ver ahora</span>
+                </div>
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F189324710927738%2F&show_text=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="video-container vertical" data-aos="zoom-in" data-aos-delay="300">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span>Ver ahora</span>
+                </div>
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3892913780992624%2F&show_text=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
         </div>
-
-        <div class="video-container vertical" data-aos="zoom-in" data-aos-delay="200">
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1493055455469216%2F&show_text=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </div>
-
-        <div class="video-container vertical" data-aos="zoom-in" data-aos-delay="300">
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1103082351497081%2F&show_text=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </div>
-
-     
-    </div>
-</section>
+    </section>
 
     <section id="contacto" class="section dark">
         <div class="contact-box" data-aos="flip-left">
-            <h2 class="section-title">ÚNETE A NUESTRA FAMILIA</h2>
+            <div class="contact-header">
+                <h2 class="section-title">ÚNETE A NUESTRA FAMILIA</h2>
+                <p class="contact-subtitle">Forma parte de la historia de Venados FC Cancún</p>
+            </div>
             <form class="contact-form">
-                <input type="text" placeholder="Nombre completo" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Tu mensaje" rows="4"></textarea>
-                <button type="submit" class="btn-submit">ENVIAR INFO</button>
+                <div class="form-group" data-aos="fade-right">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group" data-aos="fade-left">
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group" data-aos="fade-up">
+                    <input type="tel" placeholder="Teléfono">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="form-group" data-aos="fade-up">
+                    <select>
+                        <option value="">Interés principal</option>
+                        <option value="academia">Academia de Fútbol</option>
+                        <option value="pruebas">Pruebas de Talento</option>
+                        <option value="patrocinios">Patrocinios</option>
+                        <option value="eventos">Eventos Especiales</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="form-group" data-aos="fade-up">
+                    <textarea placeholder="Tu mensaje" rows="4"></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>
+                <button type="submit" class="btn-submit" data-aos="zoom-in">
+                    <span>ENVIAR INFO</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </form>
         </div>
     </section>
 
     <section class="sponsors-bar">
         <div class="sponsors-wrapper" data-aos="fade-up">
-            <div class="sponsor-item"><img src="assets/img/yazgo_logo.png" alt="Yazgo"></div>
+            <div class="sponsor-item">
+                <img src="assets/img/yazgo_logo.png" alt="Yazgo">
+                <div class="sponsor-overlay">
+                    <span>Patrocinador Oficial</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-socials">
-            <a href="https://www.facebook.com/VenadosFCCancun"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/img/logo.png" alt="Venados FC">
+                <p>Filial Cancún</p>
+            </div>
+            <div class="footer-socials">
+                <h4>SÍGUENOS</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/VenadosFCCancun" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>NAVEGACIÓN</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#nosotros">El Club</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACTO</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Cancún, Quintana Roo</p>
+                <p><i class="fas fa-envelope"></i> info@venadosfccancun.com</p>
+                <p><i class="fas fa-phone"></i> +52 998 123 4567</p>
+            </div>
         </div>
-        <p class="copyright">© 2026 Venados Futbol Club Yucatán | Todos los derechos reservados</p>
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 Venados Futbol Club Yucatán | Filial Cancún | Todos los derechos reservados</p>
+        </div>
     </footer>
 
-    <a href="https://wa.me/5219999999999?text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20la%20Filial%20Cancún." class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/5219999999999" class="whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Escríbenos</span>
     </a>
+
+    <!-- Botón para subir -->
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true });
-
-        // Carrusel Afición
-        new Swiper('.swiper-aficion', {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            autoplay: { delay: 3000 },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
-            }
-        });
-
-        // Carrusel Galería
-        new Swiper('.swiper-galeria', {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            autoplay: { delay: 4000 },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
-            }
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
